@@ -31,7 +31,7 @@ const initializeDatabase = async () => {
         id INT AUTO_INCREMENT PRIMARY KEY,
         user_id INT NOT NULL,
         city VARCHAR(255) NOT NULL,
-        weather_data JSON NOT NULL,
+        weather_data TEXT NOT NULL,
         search_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         FOREIGN KEY (user_id) REFERENCES users(id)
       )
